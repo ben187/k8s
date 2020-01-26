@@ -1,0 +1,12 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-for-nginx
+spec:
+  rules:
+  - host: progan.ru
+    http:
+      paths:
+      - backend:
+          serviceName: service-for-nginx
+          servicePort: 80
