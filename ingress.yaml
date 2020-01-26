@@ -4,7 +4,7 @@ metadata:
   name: ingress-for-nginx
 spec:
   rules:
-  - host: progan.ru
+  - host: host.example
     http:
       paths:
       - backend:
