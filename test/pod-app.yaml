@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-app
+  labels:
+   app: nginx
+spec:
+  containers:
+  - image: ben1871/nginx:version2 
+    name: nginx
+    ports:
+    - containerPort: 80
+  - image: ben1871/python:version1 
+    name: python 
+    ports:
+    - containerPort: 8080
