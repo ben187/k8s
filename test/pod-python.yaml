@@ -1,0 +1,13 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-python
+  labels:
+   app: python
+spec:
+  containers:
+  - image: ben1871/python:version1 
+    name: python 
+    ports:
+    - containerPort: 8080
