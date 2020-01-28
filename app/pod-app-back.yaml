@@ -6,7 +6,7 @@ metadata:
    app: python
 spec:
   containers:
-  - image: ben1871/python:version1
+  - image: ben1871/python:version2
     name: python
     ports:
     - containerPort: 8080
